@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sixers Tournament</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- DaisyUI & Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-4 sm:p-6 lg:p-10 bg-gray-50">
+    <!-- Navbar -->
+    <div class="font-bold text-xl sm:text-2xl lg:text-3xl bg-gray-500 p-4 sm:p-5 rounded-lg">
+        <ul class="flex flex-wrap justify-between sm:justify-evenly text-white">
+            <li>Budget: <span class="text-white">2500</span>$</li>
+            <li>Cart: <span class="text-white">0</span></li>
+            <li>Left: <span class="text-white">6</span></li>
+        </ul>
+    </div>
+
+    <!-- Main Section -->
+    <div class="flex flex-wrap lg:flex-nowrap justify-between mt-8 gap-6">
+        <!-- Player Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:w-1/2">
+            <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
+                <h5>Shakib Al Hasan</h5>
+                <h5>Price <span>500</span>$</h5>
+                <h5>Category: All-Rounder</h5>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+            </div>
+            <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
+                <h5>Tamim Iqbal</h5>
+                <h5>Price <span>450</span>$</h5>
+                <h5>Category: Batsman</h5>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+            </div>
+            <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
+                <h5>Mushfiqur Rahim</h5>
+                <h5>Price <span>400</span>$</h5>
+                <h5>Category: Wicket-Keeper</h5>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+            </div>
+            <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
+                <h5>Mahmudullah Riyad</h5>
+                <h5>Price <span>450</span>$</h5>
+                <h5>Category: All-Rounder</h5>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+            </div>
+            <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
+                <h5>Taskin Ahmed</h5>
+                <h5>Price <span>350</span>$</h5>
+                <h5>Category: Bowler</h5>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+            </div>
+            <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
+                <h5>Liton Das</h5>
+                <h5>Price <span>400</span>$</h5>
+                <h5>Category: Wicket-Keeper</h5>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+            </div>
+            <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
+                <h5>Mustafizur Rahman</h5>
+                <h5>Price <span>380</span>$</h5>
+                <h5>Category: Bowler</h5>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+            </div>
+            <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
+                <h5>Soumya Sarkar</h5>
+                <h5>Price <span>370</span>$</h5>
+                <h5>Category: All-Rounder</h5>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+            </div>
+            <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
+                <h5>Mehidy Hasan Miraz</h5>
+                <h5>Price <span>410</span>$</h5>
+                <h5>Category: All-Rounder</h5>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+            </div>
+            <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
+                <h5>Afif Hossain</h5>
+                <h5>Price <span>360</span>$</h5>
+                <h5>Category: Batsman</h5>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+            </div>
+            <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
+                <h5>Mohammad Saifuddin</h5>
+                <h5>Price <span>340</span>$</h5>
+                <h5>Category: All-Rounder</h5>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+            </div>
+            <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
+                <h5>Rubel Hossain</h5>
+                <h5>Price <span>320</span>$</h5>
+                <h5>Category: Bowler</h5>
+                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Cart Container -->
+        <div class="lg:w-1/2 bg-slate-300 shadow-lg rounded-lg p-6">
+            <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">My Cart</h3>
+            <hr class="mb-4">
+            
+            <!-- Cart List -->
+            <div class="text-lg font-medium text-gray-700">
+                <div class="flex justify-between mb-4">
+                    <span>Name</span>
+                    <span>Price</span>
+                    <span>Category</span>
+                </div>
+                <hr>
+            </div>
+
+            <!-- Total Cost -->
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mt-6">
+                Total Cost: <span class="text-green-600">0</span>$
+            </h3>
+            <hr class="my-6">
+
+            <!-- Coupon Input -->
+            <div class="mt-6">
+                <label for="coupon" class="block text-lg font-semibold mb-2">Apply Coupon Code</label>
+                <div class="flex gap-2">
+                    <input 
+                        type="text" 
+                        id="coupon" 
+                        placeholder="Enter coupon code" 
+                        class="flex-1 p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring"
+                    >
+                    <button class="btn bg-gray-300 text-white px-4 sm:px-6 rounded-lg font-bold hover:bg-green-700">Apply</button>
+                </div>
+            </div>
+
+            <!-- Grand Total -->
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mt-6">
+                Grand Total: <span class="text-green-600">0</span>$
+            </h3>
+        </div>
+    </div>
+</body>
+</html>
