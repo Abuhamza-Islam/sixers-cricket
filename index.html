@@ -13,9 +13,9 @@
     <!-- Navbar -->
     <div class="font-bold text-xl sm:text-2xl lg:text-3xl bg-gray-500 p-4 sm:p-5 rounded-lg">
         <ul class="flex flex-wrap justify-between sm:justify-evenly text-white">
-            <li>Budget: <span class="text-white">2500</span>$</li>
-            <li>Cart: <span class="text-white">0</span></li>
-            <li>Left: <span class="text-white">6</span></li>
+            <li>Budget: <span id="budget" class="text-white">2500</span>$</li>
+            <li>Cart: <span id="cart" class="text-white">0</span></li>
+            <li>Left: <span id="left" class="text-white">6</span></li>
         </ul>
     </div>
 
@@ -24,76 +24,89 @@
         <!-- Player Container -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:w-1/2">
             <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
-                <h5>Shakib Al Hasan</h5>
-                <h5>Price <span>500</span>$</h5>
-                <h5>Category: All-Rounder</h5>
-                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+                <h5 id="name">Shakib Al Hasan</h5>
+                <h5>Price <span id="price">500</span>$</h5>
+                <h5>Category:<spna id="category"> All-Rounder</spna></h5>
+                <button  class="add-to-cart btn btn-primary w-full mt-4">Add to Cart</button>               
+                
             </div>
             <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
                 <h5>Tamim Iqbal</h5>
                 <h5>Price <span>450</span>$</h5>
-                <h5>Category: Batsman</h5>
-                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+                <h5>Category: <span>Batsman</span></h5>
+                <button class="add-to-cart btn btn-primary w-full mt-4">Add to Cart</button>
+                
+                
             </div>
             <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
                 <h5>Mushfiqur Rahim</h5>
                 <h5>Price <span>400</span>$</h5>
-                <h5>Category: Wicket-Keeper</h5>
-                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+                <h5>Category: <span> Wicket-Keeper</span></h5>
+                <button class="add-to-cart btn btn-primary w-full mt-4">Add to Cart</button>
+                
             </div>
             <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
                 <h5>Mahmudullah Riyad</h5>
                 <h5>Price <span>450</span>$</h5>
-                <h5>Category: All-Rounder</h5>
-                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+                <h5>Category: <span>All-Rounder</span></h5>
+                <button  class="add-to-cart btn btn-primary w-full mt-4">Add to Cart</button>
+                
             </div>
             <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
                 <h5>Taskin Ahmed</h5>
                 <h5>Price <span>350</span>$</h5>
-                <h5>Category: Bowler</h5>
-                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+                <h5>Category: <span> Bowler</span></h5>
+                <button class="add-to-cart btn btn-primary w-full mt-4">Add to Cart</button>
+                
             </div>
             <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
                 <h5>Liton Das</h5>
                 <h5>Price <span>400</span>$</h5>
-                <h5>Category: Wicket-Keeper</h5>
-                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+                <h5>Category: <span>Wicket-Keeper</span></h5>
+                <button class="add-to-cart btn btn-primary w-full mt-4">Add to Cart</button>
+                
             </div>
             <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
                 <h5>Mustafizur Rahman</h5>
                 <h5>Price <span>380</span>$</h5>
-                <h5>Category: Bowler</h5>
-                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+                <h5>Category:<span> Bowler</span></h5>
+                <button class="add-to-cart btn btn-primary w-full mt-4">Add to Cart</button>
+                
             </div>
             <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
                 <h5>Soumya Sarkar</h5>
                 <h5>Price <span>370</span>$</h5>
-                <h5>Category: All-Rounder</h5>
-                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+                <h5>Category:<span> All-Rounder</span></h5>
+                <button  class="add-to-cart btn btn-primary w-full mt-4">Add to Cart</button>
+            
             </div>
             <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
                 <h5>Mehidy Hasan Miraz</h5>
                 <h5>Price <span>410</span>$</h5>
-                <h5>Category: All-Rounder</h5>
-                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+                <h5>Category: <span>All-Rounder</span></h5>
+                <button class="add-to-cart btn btn-primary w-full mt-4">Add to Cart</button>
+                
             </div>
             <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
                 <h5>Afif Hossain</h5>
                 <h5>Price <span>360</span>$</h5>
-                <h5>Category: Batsman</h5>
-                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+                <h5>Category: <span>Batsman</span></h5>
+                <button  class="add-to-cart btn btn-primary w-full mt-4">Add to Cart</button>
+                
             </div>
             <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
                 <h5>Mohammad Saifuddin</h5>
                 <h5>Price <span>340</span>$</h5>
-                <h5>Category: All-Rounder</h5>
-                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+                <h5>Category: <span>All-Rounder</span></h5>
+                <button  class="add-to-cart btn btn-primary w-full mt-4">Add to Cart</button>
+                
             </div>
             <div class="bg-slate-100 text-center p-4 rounded-lg shadow-lg">
                 <h5>Rubel Hossain</h5>
                 <h5>Price <span>320</span>$</h5>
-                <h5>Category: Bowler</h5>
-                <button class="btn btn-primary w-full mt-4">Add to Cart</button>
+                <h5>Category: <span>Bowler</span></h5>
+                <button class="add-to-cart btn btn-primary w-full mt-4">Add to Cart</button>
+                
             </div>
         </div>
 
@@ -104,10 +117,13 @@
             
             <!-- Cart List -->
             <div class="text-lg font-medium text-gray-700">
-                <div class="flex justify-between mb-4">
-                    <span>Name</span>
-                    <span>Price</span>
-                    <span>Category</span>
+                <div class="flex justify-between mb-4 w-full text-center">
+                    <p class="w-[33%]">Name</p>
+                    <p class="w-[33%]">Price</p>
+                    <p class="w-[33%]">Category</p>
+                </div>
+                <div id="card-added" class="text-center">
+                   
                 </div>
                 <hr>
             </div>
@@ -138,5 +154,7 @@
             </h3>
         </div>
     </div>
+    <script src="js/utility.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
