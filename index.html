@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sixers Tournament</title>
+    <title>Sixers Tournament 2</title>
     <link rel="stylesheet" href="style.css">
     <!-- DaisyUI & Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -130,7 +130,7 @@
 
             <!-- Total Cost -->
             <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mt-6">
-                Total Cost: <span class="text-green-600">0</span>$
+                Total Cost: <span id="total-cost" class="text-green-600">0</span>$
             </h3>
             <hr class="my-6">
 
@@ -140,21 +140,20 @@
                 <div class="flex gap-2">
                     <input 
                         type="text" 
-                        id="coupon" 
+                        id="coupon-code" 
                         placeholder="Enter coupon code" 
                         class="flex-1 p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring"
                     >
-                    <button class="btn bg-gray-300 text-white px-4 sm:px-6 rounded-lg font-bold hover:bg-green-700">Apply</button>
+                    <button onclick="updateGrandTotal('apply-btn')" class="btn bg-gray-300 text-white px-4 sm:px-6 rounded-lg font-bold hover:bg-green-700">Apply</button>
                 </div>
             </div>
 
             <!-- Grand Total -->
             <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mt-6">
-                Grand Total: <span class="text-green-600">0</span>$
+                Grand Total: <span id="grand-total" class="text-green-600">0</span>$
             </h3>
         </div>
     </div>
-    <script src="js/utility.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
